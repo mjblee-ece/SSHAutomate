@@ -1356,7 +1356,9 @@ __Playbook (add_loop.yml)__
 ~~~
 ---
 - name: addloop
-  hosts: realdevices
+  hosts:
+    - utm
+    - baba
   gather_facts: no
   become: yes
   tasks:
